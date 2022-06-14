@@ -1,0 +1,48 @@
+[
+    {
+        "postType": "accordion-content",
+        "show_in_menu": "sc-content-types",
+        "labels":[
+            {
+                "singular": "Accordion Content",
+                "plural": "Accordion Contents"
+            }
+        ],
+        "meta_box":[
+            {
+                "title": "Accordion Content",
+                "id" : "content-section",
+                "fields":[
+                    {
+                        "id": "content-1",
+                        "name": "Content 1",
+                        "type": "wysiwyg",
+                        "options":[
+                            {
+                                "tinymce":[
+                                    {
+                                        "toolbar1": "subscript, superscript, bold, italic"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "content-2",
+                        "name": "Content 2",
+                        "type": "wysiwyg",
+                        "options":[
+                            {
+                                "tinymce":[
+                                    {
+                                        "toolbar1": "subscript, superscript, bold, italic, table, numlist, bullist, link, media, underline"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "posttype": "dashboard",
+        "title": "Dashboard",
+        "title_singular": "dashboard",
+        "url": "/dashboard",
+        "icon": "dashicons:dashboard",
+        "subtitles":[
+            {
+                "posttype": "dashboard",
+                "parenttype": "dashboard",
+                "title": "Home",
+                "title_singular": "Home",
+                "url": "/dashboard"
+            },
+            {
+                "posttype": "my-sites",
+                "parenttype": "dashboard",
+                "title": "My Sites",
+                "title_singular": "My Site",
+                "url": "/dashboard/my-sites"
+            }
+        ]
+    },
+    {
+        "posttype": "page",
+        "title": "Pages",
+        "url": "/dashboard/edit?post_type=page",
+        "icon": "dashicons:text-page",
+        "subtitles":[
+            {
+                "posttype": "page",
+                "parenttype": "page",
+                "title": "Pages",
+                "title_singular": "Page",
+                "url": "/dashboard/edit?post_type=page"
+            },
+            {
+                "posttype": "sc-lb-template",
+                "parenttype": "page",
+                "title": "Templates",
+                "title_singular": "Template",
+                "url": "/dashboard/edit?post_type=sc-lb-template"
+            }
+        ]
+    }
+]

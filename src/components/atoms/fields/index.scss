@@ -1,0 +1,66 @@
+.fieldset {
+    margin: 6px 0 0 0;
+    padding: 0 12px 12px;
+    line-height: 1.4;
+    font-size: 13px;
+
+    &__text {
+        padding: 1.8em 0;
+        border-bottom: 1px solid #e9e9e9;
+        margin: 0 0 0.8em;
+    }
+
+    &__text-wrapper {
+        display: flex;
+    }
+
+    &__label-wrap {
+        width: 28%;
+        padding: 0 2% 0 0;
+        color: #222;
+        float: left;
+        font-weight: 600;
+        vertical-align: top;
+        font-size: 14px;
+    }
+
+    & label {
+        display: block;
+        padding: 5px 0;
+    }
+
+    &__field-wrap {
+        width: 70%;
+        float: right;
+        margin-bottom: 0;
+        padding: 0;
+        line-height: 1.3;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    & input {
+        box-shadow: 0 0 0 transparent;
+        border-radius: 4px;
+        border: 1px solid #8c8f94;
+        background-color: #fff;
+        color: #2c3338;
+        margin: 0 1px;
+        font-size: 14px;
+        box-sizing: border-box;
+        padding: 0 8px;
+        line-height: 2;
+        min-height: 30px;
+
+        &:focus {
+            background: #fffff8;
+            border-color: #2271b1;
+            box-shadow: 0 0 0 1px #2271b1;
+            outline: 2px solid transparent;
+        }
+
+        &.regular-text {
+            width: 25em;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "postType": "product-benefits",
+        "show_in_menu": "sc-content-types",
+        "labels":[
+            {
+                "singular": "Product Benefit",
+                "plural": "Product Benefits"
+            }
+        ],
+        "fields":[
+            {
+                "type": "text",
+                "id": "benefit_title"
+            }
+        ]
+    }
+]

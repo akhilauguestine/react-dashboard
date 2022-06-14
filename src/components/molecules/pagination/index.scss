@@ -1,0 +1,91 @@
+
+
+.pagination-container {
+    display: flex;
+    list-style-type: none;
+    float: right;
+    margin: 0 0 9px;
+    line-height: 1.4;
+    font-size: 13px;
+    align-items: center;
+  
+    li {
+        margin-right: 7px;
+    }
+    .pagination-item {
+        display: inline-block;
+        vertical-align: baseline;
+        min-width: 30px;
+        min-height: 30px;
+        padding: 0 4px;
+        font-size: 16px;
+        line-height: 1.625;
+        text-align: center;
+        color: #2271b1;
+    border-color: #2271b1;
+    background: #f6f7f7;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+  
+    //   &.dots:hover {
+    //     background-color: transparent;
+    //     cursor: default;
+    //   }
+      &:hover {
+        background: #f0f0f1;
+    border-color: #0a4b78;
+    color: #0a4b78;
+      }
+  
+      &.selected {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+  
+    //   .arrow {
+    //     &::before {
+    //       position: relative;
+    //       /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+    //       content: '';
+    //       /* By using an em scale, the arrows will size with the font */
+    //       display: inline-block;
+    //       width: 0.4em;
+    //       height: 0.4em;
+    //       border-right: 0.12em solid rgba(0, 0, 0, 0.87);
+    //       border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+    //     }
+  
+    //     &.left {
+    //       transform: rotate(-135deg) translate(-50%);
+    //     }
+  
+    //     &.right {
+    //       transform: rotate(45deg);
+    //     }
+    //   }
+  
+      &.disabled {
+        color: #a7aaad!important;
+        border-color: #dcdcde!important;
+        background: #f6f7f7!important;
+        box-shadow: none!important;
+        cursor: default;
+        transform: none!important;
+  
+        // .arrow::before {
+        //   border-right: 0.12em solid rgba(0, 0, 0, 0.43);
+        //   border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+        // }
+  
+        // &:hover {
+        //   background-color: transparent;
+        //   cursor: default;
+        // }
+      }
+    }
+  }

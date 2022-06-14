@@ -1,0 +1,18 @@
+[
+    {
+        "postType": "feature",
+        "show_in_menu": "sc-content-types",
+        "labels":[
+            {
+                "singular": "Feature",
+                "plural": "Features"
+            }
+        ],
+        "fields":[
+            {
+                "type": "text",
+                "id": "accordian_title"
+            }
+        ]
+    }
+]

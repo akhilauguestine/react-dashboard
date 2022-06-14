@@ -1,0 +1,46 @@
+[
+    {
+        "postType": "accordian",
+        "show_in_menu": "sc-content-types",
+        "labels": [
+            {
+                "singular": "Accordian",
+                "plural": "Accordians"
+            }
+        ],
+        "meta_box": [
+            {
+                "title": "Accordians",
+                "id": "content-section",
+                "fields": [
+                    {
+                        "id": "acc-title",
+                        "name": "Accordian Title",
+                        "type": "text"
+                    },
+                    {
+                        "id": "label1",
+                        "name": "Label",
+                        "type": "text-area"
+                    }
+                ]
+            },
+            {
+                "title": "Acc",
+                "id": "content-section",
+                "fields": [
+                    {
+                        "id": "acc-titl",
+                        "name": "Accordian Title",
+                        "type": "text"
+                    },
+                    {
+                        "id": "labe1",
+                        "name": "Labe",
+                        "type": "text-area"
+                    }
+                ]
+            }
+        ]
+    }
+]

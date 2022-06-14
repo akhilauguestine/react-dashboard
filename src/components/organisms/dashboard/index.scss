@@ -1,0 +1,111 @@
+.content {
+    &__dashboard-container {
+        display: flow-root;
+        min-height: 100px;
+        margin-bottom: 20px;
+    }
+
+    &__dashboard-wrap {
+        position: relative;
+        min-width: 255px;
+        border: 1px solid #c3c4c7;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+        background: #fff;
+        margin: 10px 0 20px 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    &__dashboard-header {
+        border-bottom: 1px solid #c3c4c7;
+    }
+
+    &__dashboard-title {
+        cursor: move;
+        font-size: 14px;
+        padding: 8px 12px;
+        margin: 0;
+        line-height: 1.4;
+        user-select: none;
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        color: #1d2327;
+    }
+
+    &__dashboard-content {
+        margin: 11px 0 0 0;
+        position: relative;
+        padding: 0 12px 12px;
+        line-height: 1.4;
+        font-size: 13px;
+
+        & table {
+            border: 1px solid #c3c4c7;
+            border-spacing: 0;
+            width: 100%;
+            clear: both;
+            margin: 0;
+            word-wrap: break-word;
+
+            & th {
+                font-weight: 600;
+                color: #2c3338;
+                line-height: 1.4em;
+                border-bottom: 1px solid #c3c4c7;
+                text-align: left;
+                font-size: 14px;
+                padding: 8px 10px;
+
+                &.sortable {
+                    padding: 0;
+                }
+
+                & a {
+                    text-decoration: none;
+                    display: block;
+                    overflow: hidden;
+                    padding: 8px;
+
+                    & span {
+                        float: left;
+                        cursor: pointer;
+                    }
+
+                    & span.sorting-indicator {
+                        display: block;
+                        visibility: hidden;
+                        width: 17px;
+                        height: 12px;
+                    }
+                }
+
+                &:hover span.sorting-indicator {
+                    visibility: visible;
+                }
+            }
+
+            & tbody {
+                & tr:nth-child(odd) {
+                    background-color: #f6f7f7;
+                }
+
+                & td {
+                    font-size: 13px;
+                    line-height: 1.5em;
+                    vertical-align: top;
+                    padding: 8px 10px;
+                }
+            }
+        }
+    }
+    &__pagination-bottom{
+      clear: both;
+      height: 30px;
+      margin: 6px 0 4px;
+      padding-top: 5px;
+      vertical-align: middle;
+    }
+}

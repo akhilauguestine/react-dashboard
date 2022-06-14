@@ -1,0 +1,27 @@
+.sc-admin-link{
+    &__sidebar-title{
+    color: white;
+    }
+    &__breadcrumb{
+        color: #2271b1;
+    transition-property: border,background,color;
+    transition-duration: .05s;
+    transition-timing-function: ease-in-out;
+    }
+    &__green-hollow-white{
+        margin-left: 0;
+        background: #02a446;
+        color: #fff;
+        padding: 10px 15px;
+        border: 1px solid #02a446;
+        border-radius: 3px;
+        position: relative;
+    top: -3px;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: normal;
+    cursor: pointer;
+    }
+}

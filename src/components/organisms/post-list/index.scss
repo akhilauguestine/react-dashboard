@@ -1,0 +1,137 @@
+.content {
+    & h1.content__heading-inline {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    & hr {
+        visibility: hidden;
+        margin: -2px 0 0;
+        clear: both;
+    }
+
+    &__filter-buttons {
+        list-style: none;
+        margin: 8px 0 0;
+        padding: 0;
+        font-size: 13px;
+        float: left;
+        color: #646970;
+
+        & li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
+
+        & a {
+            text-decoration: none;
+            line-height: 2;
+            padding: 0.2em;
+
+            & span {
+                color: #50575e;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__search-box {
+        float: right;
+        margin: 8px 0 0;
+
+        & input {
+            float: left;
+            margin: 0 4px 0 0;
+            padding: 0 8px;
+            line-height: 2;
+            min-height: 30px;
+        }
+    }
+
+    &__edit {
+        & table {
+            table-layout: fixed;
+            background: #fff;
+            border: 1px solid #c3c4c7;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+            border-spacing: 0;
+            width: 100%;
+            clear: both;
+            margin: 0;
+
+            & th {
+                color: #2c3338;
+                line-height: 1.4em;
+                font-weight: 400;
+                border-bottom: 1px solid #c3c4c7;
+                text-align: left;
+                font-size: 14px;
+                padding: 8px 10px;
+
+                & a {
+                    display: block;
+                    overflow: hidden;
+                    padding: 8px;
+                    transition: none;
+                    text-decoration: none;
+
+                    & span {
+                        float: left;
+                        cursor: pointer;
+                    }
+
+                    & span.sorting-indicator {
+                        display: block;
+                        visibility: hidden;
+                        width: 17px;
+                        height: 12px;
+                    }
+                }
+
+                &:hover span.sorting-indicator {
+                    visibility: visible;
+                }
+            }
+
+            & th.sortable {
+                padding: 0;
+            }
+
+            & .check-column {
+                padding-top: 4px;
+                vertical-align: middle;
+                width: 2.2em;
+                color: #2c3338;
+                padding: 11px 0 0 3px;
+
+                & input {
+                    margin: 0 0 0 8px;
+                    vertical-align: text-top;
+
+                }
+            }
+
+            & tbody {
+                & tr:nth-child(odd) {
+                    background-color: #f6f7f7;
+                }
+
+                & td {
+                    font-size: 13px;
+                    line-height: 1.5em;
+                    vertical-align: top;
+                    padding: 8px 10px;
+
+                    &.post-title {
+                        font-size: 14px !important;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: #2271b1;
+                    }
+                }
+            }
+        }
+    }
+}
