@@ -81,7 +81,7 @@ export const getPostFields = (props) => {
     const [myJson, setMyJson] = useState([]);
     useEffect(() => {
         if(props){
-        fetch('/plugins/' + props + '.json'
+        fetch('../../../src/plugins/' + props + '.json'
             , {
                 headers: {
                     'Content-Type': 'application/json',
